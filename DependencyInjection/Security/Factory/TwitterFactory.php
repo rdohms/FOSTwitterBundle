@@ -73,7 +73,7 @@ class TwitterFactory extends AbstractFactory
         }
 
         // without user provider
-        return 'fos_twitter.auth';
+        return $userProviderId;
     }
 
     protected function createEntryPoint($container, $id, $config, $defaultEntryPointId)
